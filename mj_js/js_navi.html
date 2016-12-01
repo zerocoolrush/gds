@@ -14,8 +14,11 @@
           $("#navi>li:has(ul)>a").each( function() {
             $(this).html( $(this).html()+' &or;' );
           });
-          $("#navi ul li:has(ul)")
-            .find("a:first");
+
+            $('#navi li a').click(function(){
+                $('#navi li a').removeClass('on');
+                $(this).addClass('on');
+            }); 
         });
     </script>
     <style>
@@ -23,7 +26,7 @@
     ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden}
     .navi>li {float: left;background-color: #333}
     li a {display: block;color: white;text-align: center;padding: 14px 0;width: 200px;text-decoration: none}
-    .navi>li>a:hover {background-color: #111}
+    .navi>li>a:hover {background-color: #3b503c}
     .on {background-color:#4CAF50}
     .navi-inner {background-color: #fff}
     .navi-inner li a {font-size: 14px;color: #000}
@@ -36,7 +39,7 @@
     <div>
         <ul id="navi" class="navi">
           <li>
-            <a class="on" href="#home">Home</a>
+            <a href="#home">Home</a>
             <ul class="navi-inner">
                 <li>
                     <a href="#">html</a>
