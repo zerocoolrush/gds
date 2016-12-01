@@ -6,14 +6,33 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 </head>
 <body>
-    <input id="man-news" name="man-news">
+    <!-- id 속성이 있고 name 속성이 man으로 끝나는 모든 입력을 찾아 값을 설정합니다.
+    <input id="man-news" name="man-apple">
     <input name="milkman">
-    <input id="letterman" name="new-letterman">
+    <input id="letterman" name="new-letter">
     <input name="newmilk">
-
     <script>
-    $( "input[name$='man']" ).val( "only this one" );
+    $( "input[name$='apple']" ).val( "only this one" );
     </script>
-
+    -->
+    
+    <!--div의 텍스트에 id를 추가하는 id를 사용하여 div에 단 한번의 클릭을 묶습니다.
+    <div style="margin: 10px 0;font-weight: bold;font-size: 28px;color: blue">2단</div>
+    <div id="2">2X1</div>
+    <div id="4">2X2</div>
+    <div id="6">2X3</div>
+    <div id="8">2X4</div>
+    <div id="10">2X5</div>
+    <div id="12">2X6</div>
+    <div id="14">2X7</div>
+    <div id="16">2X8</div>
+    <div id="18">2X9</div>
+    <script>
+        $("div[id]").one("click", function() {
+            var idString = $(this).text() + "=" + $(this).attr("id");
+            $(this).text(idString);
+        });
+    </script>
+    -->
 </body>
 </html>

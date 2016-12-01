@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>navi test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <style>
+    body {background-color: #fff}
+    ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden}
+    .navi>li {float: left;background-color: #333}
+    li a {display: block;color: white;text-align: center;padding: 14px 60px;text-decoration: none}
+    .navi>li>a:hover:not(.active) {background-color: #111}
+    .on {background-color:#4CAF50}
+    .navi-inner {background-color: #fff}
+    .navi-inner li a {font-size: 14px;color: #000}
+    .navi-inner li {border-bottom: 1px solid #e3e3e3}
+    .navi-inner li:hover {background-color: #333}
+    .navi-inner li a:hover {color: #52cc57}     
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="navi">
+          <li>
+            <a class="on" href="#home">Home</a>
+            <ul class="navi-inner" style="display:block">
+                <li>
+                    <a href="#">html</a>
+                </li>
+                <li>
+                    <a href="#">css</a>
+                </li>
+                <li>
+                    <a href="#">javascript</a>
+                </li>
+            </ul>
+          </li>
+          <li>
+              <a href="#news">News</a>
+                <ul class="navi-inner" style="display:none">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+          <li>
+              <a href="#contact">Contact</a>
+              <ul class="navi-inner" style="display:none">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+          <li>
+              <a href="#about">About</a>
+              <ul class="navi-inner" style="display:none">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
