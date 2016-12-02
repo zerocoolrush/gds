@@ -6,7 +6,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script>
         $(function(){
-          $("#navi li").hover(function(){
+            $("#navi li ul").hide();    
+            $("#navi li").hover(function(){
             $('ul:first',this).show();
           }, function(){
             $('ul:first',this).hide();
