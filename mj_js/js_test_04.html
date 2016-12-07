@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script language="javascript">
+
+$(document).ready(function(){
+	//초기값
+	var hour = 1;
+	var minute = 0;
+	var second = 2;
+	
+	// 초기화
+	$(".countTimeHour").html(hour);
+	$(".countTimeMinute").html(minute);
+	$(".countTimeSecond").html(second);
+	
+	var timer = setInterval(function () {
+			// 설정
+			$(".countTimeHour").html(hour);
+			$(".countTimeMinute").html(minute);
+			$(".countTimeSecond").html(second);
+			
+			if(second == 0 && minute == 0 && hour == 0){
+				alert('타이머 종료.');
+				clearInterval(timer); /* 타이머 종료 */
+			}else{
+				second--;
+				
+				// 분처리
+				if(second < 0){
+					minute--;
+					second = 59;
+				}
+				
+				//시간처리
+				if(minute < 0){
+					if(hour > 0){
+						hour--;
+						minute = 59;
+					}
+					
+				}
+			}
+    	}, 1000); /* millisecond 단위의 인터벌 */
+});
+
+
+</script>
+</head>
+<body>
+    <div>
+		<strong>시간 카운트</strong>
+		<span class="countTimeHour">60</span>시
+		<span class="countTimeMinute">60</span>분
+		<span class="countTimeSecond">60</span>초
+	</div>
+</body>
+</html>

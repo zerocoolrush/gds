@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>slide test</title>
+    <script src="/issue/common/js/main.jquery.touchSlider.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#mainSlide").touchSlider({
+			btn_prev : $("#previcom"),
+			btn_next : $("#nexticom"),
+			btn_tab : 'main1:main2:main3',
+			btn_tabpos : '1:2:3',
+			getPaging : function(e){
+				var str = 'main1:main2:main3';
+				var pieces = str.split(":");
+				var len = pieces.length;
+				for(var i=0;i<len;i++){
+					$('#'+pieces[i]).removeClass('');
+					$('#'+pieces[i]).removeClass('on');
+					if((i+1)==e.current){
+						$('#'+pieces[i]).addClass('on');
+					}else{
+						$('#'+pieces[i]).addClass('');
+					}
+				}
+			}
+		});
+	});	
+	</script>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <!--슬라이드-->
+                  <div class="slide-wrap">
+                      <!--이미지-->
+                      <div class="slide-cont" id="mainSlide">
+                          <ul>
+	                           <?php if(count($xml_top_list)>0) :?>
+					      			<?php foreach($xml_top_list as $value) :
+										$varNewsUrl = "/issue/newsview.php?idxno=".$value->ATC_ID;
+								?>
+								<li>
+								    <a href="<?=$varNewsUrl?>">
+									<img src="<?php echo IMG_BASEURL;?>web/sitem/<?php echo $value->PTO_PTH;?><?php echo $value->PTO_FL_NM;?>" style="width:700px;height:450px;" alt="<?php echo htmlspecialchars($value->ATC_TL_NM);?>">
+								    <span class="txt"><?php echo $value->ATC_TL_NM;?></span>
+								    <span class="mask"></span>
+									</a>
+								</li>
+								<?php endforeach;?>
+	                            <?php endif;?>
+                            </ul>
+                     </div>
+                     <!--//이미지-->
+                     <!--버튼-->
+                     <div class="slide-btn">
+                         <div id="previcom" class="pang-btn-wrap on"><a href="#" class="Nicon prev">이전</a></div>
+                         <div id="nexticom" class="pang-btn-wrap"><a href="#" class="Nicon next">다음</a></div>
+                     </div>
+                     <!--//버튼-->
+                     <!--도트-->
+                     <div class="slide-dot">
+                         <ul>
+                            <li class="on" id="main1"></li>
+                            <li class="" id="main2"></li>
+                            <li class="" id="main3"></li>
+                         </ul>    
+                      </div>
+                     <!--//도트-->
+                </div>
+                <!-- //슬라이드 -->
+</body>
+</html>

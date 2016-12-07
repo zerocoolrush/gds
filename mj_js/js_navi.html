@@ -6,17 +6,16 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script>
         $(function(){
-            $("#navi li ul").hide();    
+            $("#navi li ul").hide();//드롭메뉴 숨겨줘    
             $("#navi li").hover(function(){
-            $('ul:first',this).show();
+            $('ul:first',this).show();//li(메뉴)를 hover하면 보여줘
           }, function(){
-            $('ul:first',this).hide();
+            $('ul:first',this).hide();//li(메뉴)를 클릭하면 숨겨줘
           });
           $("#navi>li:has(ul)>a").each( function() {
             $(this).html( $(this).html()+' &or;' );
           });
-
-            $('#navi li a').click(function(){
+            $('#navi li a').click(function(){ //
                 $('#navi li a').removeClass('on');
                 $(this).addClass('on');
             }); 
