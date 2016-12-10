@@ -1,0 +1,651 @@
+@charset "utf-8"; 
+
+/* 섹션홈 탭 */
+.s_sec_home {overflow: hidden;width: 1100px;border-bottom: 1px solid #e3e3e3}
+.s_sec_home .s_sec_h_tit {float: left;width: 50px;margin: 19px 0 5px 25px}
+.s_sec_home .s_sec_h_tit a:hover {text-decoration: none}
+.s_sec_home .menu_fst {position: relative}
+.s_sec_home .menu_fst .sec_home_line {display: block;overflow: hidden;position: absolute;top: 8px;left: -10px;width: 1px;height: 12px;margin-top: -4px;padding: 0;background: #ccc}
+.s_sec_home .s_sec_h_txt {float: left} 
+.s_sec_h_txt ul {overflow: hidden;padding:0 0 0 25px}
+.s_sec_h_txt ul li {float: left;padding-right: 20px}
+.s_sec_h_txt ul li a {font-size: 14px}
+.s_sec_h_txt li:first-child a {display: block;position: relative;color: #000;font-size: 14px;font-weight: bold}
+.s_sec_h_txt .on a {display: block;padding-bottom: 14px;color: #333;font-size: 14px;font-weight: bold;border-bottom: 4px solid #000}
+.s_sec_h_txt li:first-child span {display: block;position: relative;color: #000;font-size: 14px;font-weight: bold}
+.s_sec_h_txt .on span {display: block;padding-bottom: 14px;color: #333;font-size: 14px;font-weight: bold;border-bottom: 4px solid #000}
+
+/* 섹션홈 메인기사 */
+.s_top_article {overflow: hidden;width: 100%;margin-top: 20px}
+.s_top_article .top_article_cont {overflow: hidden;padding-bottom: 20px;border-bottom: 1px solid #e3e3e3}
+.s_top_article .top_article_img {overflow: hidden;float: left;width: 250px;height: 167px}
+.s_top_article .top_article_txt {overflow: hidden;float: left;width: 440px;padding-top: 10px;margin-left: 25px}
+.s_top_article .top_article_tit {overflow: hidden;max-height: 70px}
+.s_top_article .top_article_tit a {color: #1d3982;font-size: 24px;font-weight: bold;line-height: 34px;letter-spacing: -2px}
+.s_top_article .top_article_lead {overflow: hidden;max-height: 70px; margin-top: 10px}
+.s_top_article .top_article_lead a {color: #333;font-size: 14px;line-height: 22px}
+
+/* 서브타이틀 공통 */
+.sec_s_tit a {color: #000;font-size: 16px;font-weight: bold}
+
+/* 뉴스초점 */
+.s_news_focus {margin-top: 20px}
+.s_news_focus .e_top_article {overflow: hidden;width: 100%;margin-top: 0}
+.s_news_focus .top_article_cont {overflow: hidden;padding-bottom: 20px}
+.s_news_focus .top_article_img {overflow: hidden;float: left;width: 150px;height: 100px}
+.s_news_focus .top_article_txt {overflow: hidden;float: left;width: 540px}
+.s_news_focus .news_focus_tit {overflow: hidden;max-height: 40px;padding-bottom: 3px}
+.s_news_focus .news_focus_tit a {padding-bottom: 5px;color: #2154ff;font-size: 16px;font-weight: bold;border-bottom: 1px solid #2154ff;letter-spacing: -2px;}
+.s_news_focus .top_article_keyword {overflow: hidden;height: 75px;margin-top: 7px}
+.s_news_focus .top_article_keyword ul li {padding-top: 5px}
+.s_news_focus .top_article_keyword ul li a {text-indent: 0}
+.s_news_focus .top_article_keyword ul li:first-child {overflow: hidden;height: 20px; padding-top: 0}
+.artlcle_ico {width: 6px;padding-left: 12px;background-position: -40px 6px;color: #333;font-size: 15px;}
+
+/*오늘의 국회*/
+.today_congress_w {padding-bottom: 30px}
+.today_congress .round:before {display: inline-block;overflow: hidden;width: 29px;height: 27px;background: url("../images/201605/icon.png") no-repeat 0 0;background-position: 0px -1710px;vertical-align: top;margin: -1px 0px 0 -5px;content: '';}
+.today_congress .round:after {display: inline-block;overflow: hidden;width: 29px;height: 27px;background: url("../images/201605/icon.png") no-repeat 0 0;background-position: -45px -1710px;vertical-align: top;margin: -1px -1px 0 2px;content: '';}
+.today_congress .round {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: block;height: 27px;padding: 0;line-height: 23px;font-size: 14px;letter-spacing: -1px;color: #c93373;font-weight: bold;border-top: 1px solid #c93373;border-bottom: 1px solid #c93373;}
+.today_congress {overflow: hidden}
+.today_congress_c {float: left;position: relative;width: 238px;height: 148px;margin-left: 20px;background-color: #f6f7fb;border: 1px solid #edeff4}
+.today_congress_c:first-child {margin-left: 0} 
+.today_congress_line {display: block;float: left}
+.today_congress_c .TC_line_01 {position: absolute;top: 30px;left: 59px;/*ie7*/*left: 84px}/*텍스트바뀔시 위치값조정 */
+.today_congress_c .TC_line_02 {position: absolute;top: 30px;left: 59px;/*ie7*/*left: 84px}/*텍스트바뀔시 위치값조정 */
+.today_congress_c .TC_line_03 {position: absolute;top: 30px;left: 59px;/*ie7*/*left: 84px}/*텍스트바뀔시 위치값조정 */
+.TC_txt_w {display: block;overflow: hidden;position: absolute;top: 70px;left: 0;max-height: 50px;padding: 0 30px 0 30px;text-align: center}
+.TC_txt_c {font-size: 17px;font-weight: bold}
+
+/*최신기사*/
+.latest_articles_c {padding-bottom: 40px}
+.news_lst2 li:first-child {padding-top: 15px}
+.news_lst2 li {padding-top: 25px}
+.news_lst2 .thumb_area {margin-right: 20px;float: left;width: 160px;height: 107px}
+.thumb_area {display: block;position: relative}
+.news_lst2 .tit_area {padding-top: 4px;overflow: hidden;min-height: 82px}
+.news_lst2 .tit {display: block; overflow: hidden;max-height: 48px;font-size: 17px;font-weight: bold}
+.news_lst2 .summary {overflow: hidden;max-height: 48px;padding-top: 5px}
+.news_lst2 .summary a {font-size: 14px;color: #888;letter-spacing: -1px;line-height: 22px;}
+.press {display: block;margin-top: 8px;font-size: 12px;color: #809ec5;font-family: 'Tahoma';font-weight: bold;letter-spacing: -1px}
+.news_lst li:after {display: block;clear: both;content: ''}
+
+/*기획_기사뷰*/
+.e_plan_w {overflow: hidden;padding:0 30px 0 30px;text-align: left}
+.e_plan_tit {float: left;width: 50px;height: 23px;line-height: 23px;margin-right: 10px;background-color: #2c4fc1;vertical-align: middle;text-align: center }
+.e_plan_tit a {color: #fff;font-size: 15px;font-weight: bold}
+.e_plan_txt {float: left}
+.e_plan_txt a {color: #2c4fc1;font-size: 16px;font-weight: bold}
+
+/* 기사뷰타이틀header */
+.article_head {position: relative;padding-bottom: 45px;border-bottom: 1px solid #ccc;text-align: left}
+.article_head .subject {padding: 0 30px 0 30px;margin-bottom: 15px}
+.article_head .subject h2 {font-size: 32px;letter-spacing: -3px}
+.article_head .byline {position: absolute;bottom: 20px;left: 30px;}
+.article_head .byline em {color: #888;font-size: 13px;letter-spacing: -1px}
+.article_sns_w {position: absolute;bottom: 20px;right: 60px}
+.article_sns_w ul {overflow: hidden}
+.article_sns_w ul li {float: left;position: relative;padding-left: 15px}
+.article_sns_w .sec_home_line {position: absolute;top: 9px;left: 64px;width: 1px;height: 20px}
+.article_sns_w .ico {display: block;width: 30px;height: 30px;}
+.article_sns_w .face {background-position: 0 -1830px}
+.article_sns_w .face:hover {background-position: 0 -1880px}
+.article_sns_w .twi {background-position: -45px -1830px}
+.article_sns_w .twi:hover {background-position: -45px -1880px}
+.article_sns_w .kao {background-position: -90px -1830px}
+.article_sns_w .kao:hover {background-position: -90px -1880px}
+.article_sns_w .comment {padding-right: 15px;background-position: -134px -1830px}
+.article_sns_w .comment:hover {padding-right: 15px;background-position: -134px -1880px}
+.article_sns_w .print {background-position: 10px -1926px}
+.article_sns_w .text_s {background-position: -35px -1926px}
+.article_sns_w .text_l {background-position: -75px -1926px}
+.article_head .text_s_w {margin-left: -5px}
+.article_head .text_l_w {margin-left: -5px}
+
+/* 기사뷰 전체wrap */
+.cont_left_article_w {width: 760px;padding-bottom: 40px;border-bottom: 1px solid #000}
+
+/* 기사뷰 본문 */
+.cont_left_article {overflow: hidden;width: 680px;padding: 20px 0 0 30px;clear: both}
+.cont_left_article p {margin-bottom: 35px;font-size: 17px;line-height: 32px;letter-spacing: -1px}
+.cont_left_article .a_reporter {display: block;margin-bottom: 25px;color: #888;font-size: 15px}
+.cont_left_article .reporter_copy_w span {font-size: 15px;letter-spacing: -1px}
+.cont_left_article .reporter_copy_w_2 {padding-top: 13px;color: #888}
+
+/* AD텍스트 */
+.article_ad_txt {position: relative}
+.article_ad_txt .r_ad_ico {position: absolute;top: 97px;right: 0}
+
+/* 기사뷰 관련기사/현재가 */
+.related_articles_CP_w {overflow: hidden;width: 680px;margin: 20px 25px 40px 25px}
+.a_related_articles_w {float: left;width: 340px}
+.a_related_articles_w .top_article_keyword ul {margin: 15px 0 0 10px}
+.a_related_articles_w .top_article_keyword ul li {padding-bottom: 5px}
+.a_CP_w {float: left;position: relative;width: 280px;margin-left: 60px}
+.a_CP_w .e_delay {position: absolute;top: 2px;left: 55px} 
+.e_CP_c {margin-top: 12px;border-top: 1px solid #dcdcdc}
+.e_CP_c .e_mc_wrap {overflow: hidden;width: 280px;height: 30px;line-height: 30px;vertical-align: middle;border-bottom: 1px solid #dcdcdc}
+.e_CP_c .e_mc_wrap dt {font-weight: normal;font-family: '맑은 고딕';width: 80px;padding-left: 10px}
+.e_CP_c .e_mc_wrap dd {float: right;width: 60px;padding-right: 10px}
+
+/* 이 시각 핫뉴스 */
+.time_hot_news_w {padding-bottom: 40px;border-bottom: 1px solid #dcdcdc}
+.time_hot_news_c {overflow: hidden;width: 725px;margin: 20px 0 0 25px}
+.time_hot_news_w .e_right_tit {margin-bottom: 15px}
+.time_hot_news_m {float: left;padding-right: 20px}
+.time_hot_news_w .t_h_n_tit_area {width: 290px;margin-top: 20px}
+.time_hot_news_w .t_h_n_tit_area strong {overflow: hidden;max-height: 40px;line-height: 26px}
+.time_hot_news_w .t_h_n_tit_area strong a {font-size: 20px;letter-spacing: -2px}
+.time_hot_news_w .t_h_n_tit_area p {overflow: hidden;max-height: 70px;margin-top: 20px;line-height: 22px}
+.time_hot_news_w .t_h_n_tit_area p a {color: #888;font-size: 15px}
+.time_hot_news_w .t_h_n_key_w {margin-top: 20px}
+.time_hot_news_w .time_hot_news_l {float: left}
+.time_hot_news_w .t_h_n_lst1 {overflow: hidden}
+.time_hot_news_w .t_h_n_lst1 ul li {width: 405px;height: 80px;margin-bottom: 20px;border-bottom: 1px solid #ebebeb}
+.time_hot_news_w .lst_thumb_area {float:left;width: 120px;height: 80px;padding-right: 15px}
+.time_hot_news_w .lst_txt_area {overflow: hidden;padding-top: 15px;max-height: 50px;line-height: 22px}
+.time_hot_news_w .lst_txt_area a {font-size: 15px;font-weight: bold}
+.time_hot_news_w .t_h_n_lst2 ul li {padding-left: 15px}
+.time_hot_news_w .t_h_n_lst2 ul li:first-child {padding-left: 0}
+.time_hot_news_w .t_h_n_lst2 ul li a {width: 112px;height: 130px}
+.time_hot_news_w .t_h_n_lst2 .card_news_c {margin-top: 0}
+.time_hot_news_w .t_h_n_lst2 .card_news_mask {width: 112px;height: 130px}
+.time_hot_news_w .t_h_n_lst2 ul li a img {width: 112px;height: 130px}
+.time_hot_news_w .t_h_n_lst2 ul li a .card_news_txt {padding-left: 3px;width: 95px;font-size: 14px;font-weight: bold}
+
+/*오피니언 탑기사*/
+.top_opinion_txt .opinion_logo {width: 220px;height: 33px;background-position: 0 -1980px}
+.top_opinion_txt .top_article_tit {margin-top: 15px}
+.top_opinion_txt .top_article_tit a {color: #333}
+.top_opinion_txt .top_article_lead {margin-top: 15px}
+.top_opinion_txt .top_article_lead a {color: #888;font-size: 15px;line-height: 24px}
+.top_opinion_txt .thumbnail {display: block;overflow: hidden;float: right;position: relative;width: 151px;height: 151px;margin: 30px 0 0 40px}
+.top_opinion_txt .thumbnail .thumbring {position: absolute;top: 0;left: 0px;width: 151px;height: 151px;background-position: 0 -2160px}
+.top_opinion_txt .top_article_cont {border-bottom: none}
+
+/* 오피니언 리스트메뉴*/
+.s_opinion_w {height: 292px;margin-top: 10px;background-color: #dedfe3}
+.s_opinion_w .s_opinion_c {float: left;position: relative;width: 238px;height: 270px;margin: 10px 0 10px 10px;background-color: #fff;border: 1px solid #cdcdcd;text-align: center}
+.s_opinion_w .today_congress .round:before {background-position: 0px -2331px}
+.s_opinion_w .today_congress .round:after {background-position: -45px -2331px}
+.s_opinion_w .today_congress .round {color: #fe4181;border-top: 1px solid #fe4181;border-bottom: 1px solid #fe4181}
+.s_opinion_w .today_congress_line {position: absolute;top: 20px;left: 80px}
+.s_opinion_w .o_opin_txt_w {position: absolute;left: 55px}
+.s_opinion_w .TC_line_01 {/*ie7*/*left: 105px}/*텍스트바뀔시 위치값조정 */
+.s_opinion_w .TC_line_02 {/*ie7*/*left: 105px}/*텍스트바뀔시 위치값조정 */
+.s_opinion_w .TC_line_03 {/*ie7*/*left: 105px}/*텍스트바뀔시 위치값조정 */
+.s_opinion_w .s_opin_txt {overflow: hidden;width: 210px;height: 42px;margin: 0 auto;padding-top: 60px}
+.s_opinion_w .s_opin_txt a {color: 000;font-size: 15px;font-weight: bold}
+
+/* 오늘의 칼럼/데스크칼럼/기자수첩/인사동정부음 */
+.s_tc_dc_w {overflow: hidden;padding: 25px 0 25px 0;border-bottom: 1px solid #e3e3e3}
+
+/* 오늘의 칼럼 */
+.s_opinionC1_w {float: left;width: 460px;padding-right: 20px;border-right: 1px solid #e3e3e3}
+.s_opinionC1_c .news_lst2 .thumb_area {width: 90px;height: 90px;padding-top: 10px}
+.s_opinionC1_c .press {margin-top: 3px}
+.s_opinionC1_c li {padding-top: 15px}
+
+/* 데스크칼럼 */
+.s_opinionC2_w {float: right;width: 260px}
+.s_opinionC2_c ul li {overflow: hidden;margin-top: 45px}
+.s_opinionC2_c ul li .s_deskcolumn_name {display: block;overflow: hidden;height: 20px;margin-bottom: 2px}
+.s_opinionC2_c ul li .s_deskcolumn_name span {color: #809ec5;font-size: 13px}
+.s_opinionC2_w .s_deskcolumn_tit {display: block;overflow: hidden;height: 40px}
+.s_opinionC2_w .s_deskcolumn_tit a {color: #000;font-size: 14px;font-weight: bold}
+.s_opinionC2_w .s_opinionC2_c .thumbnail {display: block; overflow: hidden;float:right;position: relative;width: 60px;height: 60px}
+.s_opinionC2_w .s_opinionC2_c .thumbnail .thumbring {position: absolute;top: 0;left: 0px;width: 60px;height: 60px;background-position: 0 -2390px}
+
+/* 기자수첩 */
+.s_article_memo_c .tit_area {min-height: 30px}
+
+/* 인사동정부음*/
+.s_opinionC2_c {margin-top: 40px}
+.s_opinionC2_c .today_congress .round {color: #2154ff;border-top: 1px solid #2154ff;border-bottom: 1px solid #2154ff}
+.s_opinionC2_c .today_congress .round:before {background-position: 0px -2470px}
+.s_opinionC2_c .today_congress .round:after {background-position: -45px -2470px}
+.s_opinionC2_c .e_MK_tap_list ul {margin-top: 0;padding-left: 15px}
+.s_opinionC2_c .e_MK_tap_list ul li {margin-top: 10px;padding-bottom: 0}
+.s_opinionC2_c .e_MK_tap_list ul li .R_list_txt {display: block;overflow: hidden;height: 22px;text-overflow: ellipsis;-o-text-overflow: ellipsis;white-space: nowrap;word-wrap: normal !important}
+
+/*사내칼럼*/
+.internal_column_w {position: relative;overflow: hidden;padding: 20px 0 20px 0;border-bottom: 1px solid #e3e3e3}
+.internal_column_c ul {width: 3000px}
+.internal_column_c ul li {float: left;padding-left: 25px}
+.internal_column_c ul li:first-child {padding-left: 30px}
+.internal_column_c .thumbnail{display: block; overflow: hidden;position: relative;margin: 15px 0 0 8px}
+.internal_column_c .thumbring {position: absolute;top: 0;left: 0px;width: 100px;height: 100px;background-position: 0 -2030px}
+.internal_column_c .internal_column_txt {display: block;overflow: hidden;width: 120px;height: 38px;margin-top: 10px;text-align: center}
+.internal_column_c .internal_column_txt a {color: #000;font-size: 14px;text-align: center}
+.internal_column_c .o_opin_txt_w {padding-bottom: 0}
+.e_IC_btn .prev {position: absolute;top: 95px;left: 0;width: 20px;height: 37px;background-position: 0 -2510px}
+.e_IC_btn .next {position: absolute;top: 95px;right: 0;width: 20px;height: 37px;background-position: -50px -2510px}
+.e_IC_btn .prev:hover {background-position: 0 -2560px}
+.e_IC_btn .next:hover {background-position: -50px -2560px}
+
+/* 사내필진 */
+.house_writers_w {position: relative;margin-top: 30px;/*ie7*/*padding-bottom: 30px}
+.house_writers_c ul {overflow: hidden}
+.house_writers_c ul li {float: left;width: 380px; margin: 0 0 30px 0}
+.house_writers_c ul li .s_deskcolumn_name a {font-size: 14px}
+.house_writers_c .s_opinionC2_c .s_deskcolumn_tit {display: block;overflow: hidden;height: 20px;}
+.house_writers_c .s_opinionC2_c .s_deskcolumn_tit a {font-size: 14px}
+.house_writers_c .s_opinionC2_c .thumbnail {overflow: hidden;float:left;position: relative;width: 60px;height: 60px}
+.house_writers_c .s_opinionC2_c .thumbnail .thumbring {display: block; position: absolute;top: 0;left: 0px;width: 60px;height: 60px;background-position: 0 -2390px;padding-left: 10px}
+.house_writers_c .s_dc_txt_w {padding-top: 10px}
+.house_writers_c .s_opinionC2_c {margin-top: 20px}
+
+/* 사내필진_tab */
+.house_writers_tab {position: absolute;top: 0;right: -20px;/*ie7*/*right: 0}
+.house_writers_tab ul {overflow: hidden}
+.house_writers_tab ul li {float: left;/*ie7*/*padding-left: 30px}
+.house_writers_tab ul li a {font-family: 'Tahoma';height: 20px}
+.house_writers_tab ul li.on .today_congress .round {color: #000;font-size: 13px;line-height: 25px;border-top: 1px solid #000;border-bottom: 1px solid #000}
+.house_writers_tab ul li.on .today_congress .round:before {width: 20px;background-position: 0px -2610px}
+.house_writers_tab ul li.on .today_congress .round:after {width: 20px;background-position: -50px -2610px}
+.house_writers_tab ul li .today_congress .round {color: #888;font-size: 13px;line-height: 25px;border-top: none;border-bottom: none}
+.house_writers_tab ul li.off .today_congress .round:before {width: 20px;background-position: 0px -2660px}
+.house_writers_tab ul li.off .today_congress .round:after {width: 20px;background-position: -50px -2660px}
+
+/*칼럼리스트메인*/
+.top_column_list_w {height: 100px;padding: 0 0 20px 0;border-bottom: 1px solid #e3e3e3}
+.top_column_list_c .s_dc_txt_w {padding-top: 30px}
+.top_column_list_c .thumbnail {float: left;position: relative;margin-right: 15px}
+.top_column_list_c .thumbnail .thumbring {position: absolute;top: 0;left: 0px;width: 100px;height: 100px;background-position: 0 -2030px}
+.top_column_list_c strong {padding-right: 5px}
+.top_column_list_c strong a {font-size: 20px;letter-spacing: -2px}
+.top_column_list_c .column_list_job {color: #1d46c9;font-size: 14px;font-weight: bold}
+.top_column_list_c .column_list_detali {display: block;padding-top: 2px;letter-spacing: -1px}
+.column_list_detali span {font-size: 14px}
+.c_l_detali_txt{padding: 0 10px 0 5px;color: #888}
+.c_l_detali_tit2 {padding: 0 0 0 10px}
+.c_l_detali_line {color: #ccc;line-height: 20px}
+
+/*기획/이슈컨텐츠*/
+.planning_issues_w {padding: 10px 0 30px 0}
+.planning_issues_w .e_ent_sport_txt {position: absolute;bottom: 9px;left: 14px;text-align: left}
+.planning_round {position: absolute;top: 12px;left: 10px;width: 51px;height: 25px;background-position: 0 -2700px;z-index: 999}
+.issues_round {position: absolute;top: 12px;left: 10px;width: 51px;height: 25px;background-position: 0 -2740px;z-index: 999}
+.planning_issues_box {width:268px;height:136px;padding-top:17px;border:1px solid #ddd}
+.planning_issues_box .artlcle_ico_w {display: block;overflow: hidden;height: 22px;margin: 0 0 7px 20px}
+.planning_issues_box .artlcle_ico_w .artlcle_ico {text-indent: 0}
+.pi_artlcle_txt {display: block;overflow: hidden;margin-right: 55px;height: 22px}
+.pi_article_box {width: 268px;height: 29px;line-height: 26px;vertical-align: middle;margin-top: 26px;background-color:#f5f5f5;border-top: 1px solid #ddd}
+.pi_article_box a {color: #333;font-weight: bold}
+
+/*서브_이슈리스트*/
+.top_issues_tit_img {position: relative;width: 760px;height: 120px;background-position: 0 -2790px;z-index: 1}
+.top_issues_tit_w .issues_round {position: absolute;top: 50px;left: 355px}
+.s_top_issues_tit {overflow: hidden;width:720px;position: absolute;top: 78px;height: 30px;margin-left: 20px;text-align: center;z-index: 99}
+.s_top_issues_tit span {display: block;color: #fff;font-size: 20px;font-weight: normal}
+
+/*서브_특집리스트*/
+.top_feat_tit_w .issues_round {position: absolute;top: 50px;left: 355px;width: 51px;height: 25px;background-position: -90px -2740px;z-index: 999}
+.top_feat_tit_img {position: relative;width: 760px;height: 120px;background-position: 0 -2950px;z-index: 1}
+
+/*서브_특집리스트홈_탑기사*/
+.top_feat_home_w {padding-bottom: 25px;border-bottom: 1px solid #e3e3e3}
+.top_feat_home_w .e_top_article {margin-top: 0}
+.top_feat_home_w .e_top_article .top_article_img {width: 240px;height: 160px}
+.top_feat_home_w .e_top_article .top_article_tit {padding-top: 25px}
+.top_feat_home_w .e_top_article .top_article_tit a {color: #333;font-size: 22px;font-weight: bold;letter-spacing: -4px}
+
+/* 특집리스트 홈_리스트10개 */
+.feat_home_lst_w {overflow: hidden;padding: 25px 0 25px 0;border-bottom: 1px solid #e3e3e3}
+.feat_home_lst_c {float: left;}
+.feat_home_lst_c:first-child {width: 380px;margin-right: 35px;border-right: 1px solid #ddd}
+.feat_home_lst_c .p_s_rist_cont {padding-top: 0}
+
+/*그룹기사리스트*/
+.s_group_w {margin-top: 25px}
+.s_group_c {margin-top: 15px}
+.s_group_c .news_lst2 {padding-bottom: 25px}
+.s_group_lst_w {overflow: hidden;height: 28px;margin-top: 10px}
+.s_group_lst_tit {overflow: hidden;display: block;height: 26px;padding-bottom: 10px}
+.s_group_lst_tit a {overflow: hidden;width: 500px;font-size: 16px;font-weight: bold;}
+.s_group_lst_tit .press {display: inline;margin-left: 10px}
+.group_view_all {display: block;margin-top: 15px;height: 45px;line-height: 40px;vertical-align: middle;text-align: center;border-top: 1px solid #aaa;border-bottom: 1px solid #555;}
+.group_view_all a {display: block;font-size: 17px;font-weight: bold}
+.gv_txt_w {position: relative;}
+.view_all_ico {position: absolute;top: 10px;right: -20px;width: 11px;height: 6px;background-position: 0 -3100px;text-indent: -9999px}
+.e_news_focus_r ul li.last {height: 22px}
+/* 뉴스랭킹_카드뉴스 */
+.card_news_rank_w {overflow: hidden;width: 1100px;margin: 0 20px 20px 20px}
+.card_news_rank_w ul {margin-top: 30px}
+.card_news_rank_w ul li {float: left;width: 250px;padding-right: 20px}
+.card_news_rank_w .pe_rank_tit {overflow: hidden;width: 230px;height: 48px;margin: 5px 13px 0 7px;text-align: left}
+.card_news_rank_w .pe_rank_tit a {font-weight: bold;font-size: 17px;text-align: left}
+
+/*뉴스랭킹_많이본기사*/
+.enjoy_news_rank_w {overflow: hidden;width:1100px;border-bottom: 1px solid #dcdcdc}
+.enjoy_news_rank_w .today_congress .round {color: #fe4181;border-top: 1px solid #fe4181;border-bottom: 1px solid #fe4181}
+.enjoy_news_rank_w .today_congress .round:before {background-position: 0px -2331px}
+.enjoy_news_rank_w .today_congress .round:after {background-position: -45px -2331px}
+.news_rank_lst .TC_line_01 {padding: 30px 0 5px 80px;/*ie7*/*padding-left: 105px}
+.news_rank_lst .TC_line_02 {padding: 30px 0 5px 80px;/*ie7*/*padding-left: 105px}
+.news_rank_lst .TC_line_03 {padding: 30px 0 5px 60px;/*ie7*/*padding-left: 85px}
+.news_rank_lst .TC_line_04 {padding: 30px 0 5px 80px;/*ie7*/*padding-left: 105px}
+.enjoy_news_rank_w .newsR_num {color: #fe4181}
+
+/*뉴스랭킹_많이본기사/뉴스팡팡인기기사/카드뉴스 공통*/
+.rank_sec_w {margin-top: 40px}
+.news_rank_lst {float: left;width: 234px;padding: 0 20px 0 20px;border-right: 1px solid #dcdcdc}
+.news_rank_lst ul li {border-bottom: 1px solid #dcdcdc}
+.e_news_rank_tab {position: relative}
+.n_rank_calender {display: block;width: 1100px;position: absolute;top: 20px;font-size: 15px;text-align: center}
+.rank_calender_ico {position: absolute;top: 0;left: 665px;width: 27px;height: 26px;background-position: 0 -3159px}
+.news_rank_lst .R_thumb_area {float: right;margin-left: 10px;margin-right: 0}
+.news_rank_lst .e_rightAticle_c {margin-top: 0px;padding-bottom: 10px;}
+.news_rank_lst .e_rightAticle_c .tit_area {max-height: 65px;padding-top: 0;text-align: left}
+.news_rank_lst .e_rightAticle_c .tit_area a {color: #888;font-size: 14px;line-height: 20px;}
+.newsR_num_w {display: block;padding: 10px 0 10px 0}
+.newsR_num {display: block;float: left;height: 38px;line-height: 38px;/*ie7*/*line-height: 60px;padding-right: 10px;font-weight: bold;font-size: 25px;font-family: 'Dotum'}
+.newsR_num_w .tit {display: block;overflow: hidden;font-size: 14px;height: 38px;font-weight: bold;text-align: left}
+.rank_right {border-right: none}
+
+/*뉴스랭킹_뉴스팡팡 인기기사*/
+.pang_enjoy_rank_w {overflow: hidden;width:1100px;border-bottom: 1px solid #dcdcdc}
+.pang_enjoy_rank_w .e_rightAticle_c {height: 60px;margin-top: 0}
+.pang_enjoy_rank_w .newsR_num {color: #350fdd;line-height: 38px}
+.news_rank_lst .last {border-bottom: none}
+.pang_sec_w {padding-bottom: 5px;border-bottom: 1px solid #dcdcdc}
+
+/*이투데이 검색페이지_검색창*/
+.search_wrap {text-align: center; padding: 20px 0}
+.search_wrap .search_wrap_c {margin: 0 auto;width: 340px}
+.search_box {float: left;padding-left: 5px; border: 2px solid #1d46c9; width: 280px; height: 40px; font-size: 15px; font-weight: bold}
+.btn_search {float: left;width: 46px;height: 46px;padding-left: 2px;background-color: #1d46c9;background-position: 13px -3113px}
+
+/*이투데이 검색페이지_탭*/
+.search_wrap_tab {margin-top: 10px}
+.search_wrap_tab ul {overflow: hidden}
+.search_wrap_tab ul li {float: left;width: 186px;height: 40px;line-height: 40px;vertical-align: middle;margin-left: 2px;border: 1px solid #bbb;text-align: center}
+.search_wrap_tab ul li.on {width: 188px;height: 42px;background-color: #1d46c9;border: none}
+.search_wrap_tab ul li a {display: block}
+.search_wrap_tab ul li:first-child {margin-left: 0}
+.search_wrap_tab ul li.on a {color: #fff;font-weight: bold}
+
+/*검색선택사항*/
+.search_select_w {position: relative;width: 760px;height: 115px;background-color: #f8f8f8;border-bottom: 1px solid #bbb}
+.search_select_w .search_select_c label {color: #555;font-size: 12px;vertical-align: middle}
+.search_select_w .search_select_c .sc_tab_tit {float: left;padding-right: 15px;height: 20px;line-height: 20px}
+.search_select_w .search_check_tab .sc_tab_txt {overflow: hidden;float: left}
+.search_select_w .search_check_tab ul {width: 135px}
+.search_select_w .search_check_tab ul li {float: left;width: 42px;height:20px;background-color: #fff;border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;border-right: 1px solid #bbb;text-align: center}
+.search_select_w .search_check_tab ul li.on {width: 42px;height:20px;background-color: #555;}
+.search_select_w .search_check_tab ul li:first-child {border-left: 1px solid #bbb}
+.search_select_w .search_check_tab ul li a {font-size: 12px}
+.search_select_w .search_check_tab ul li.on a {color: #fff}
+.search_select_w .search_check_tab {color: #555;font-size: 13px}
+.search_select_w .sc_tab_tit {line-height: 22px;vertical-align: middle}
+.search_select_w .check_01 {position: absolute;top: 28px;left: 16px}
+.search_select_w .check_02 {position: absolute;top: 28px;left: 88px}
+.search_select_w .check_03 {position: absolute;top: 28px;left: 293px}
+.search_select_w .check_04 {position: absolute;top: 28px;left: 356px}
+.search_select_w .check_05 {position: absolute;top: 28px;left: 425px}
+.search_select_w .check_06 {position: absolute;top: 60px;left: 16px}
+.search_select_w .check_07 {position: absolute;top: 60px;left: 87px}
+.search_select_w .check_08 {position: absolute;top: 60px;left: 290px}
+.search_select_w .check_08 .check_calender_ico {width: 27px;height: 26px;background-position: 0 -3197px}
+.search_select_w .check_08 input {width: 105px}
+.search_select_w .check_04 .date_search {height: 20px;padding-right: 15px;line-height: 22px;vertical-align: middle}
+.search_select_w .check_btn {position: absolute;top: 17px; right: 15px;width: 80px;height: 80px;background-color: #1d46c9;color: #fff;font-size: 14px;font-weight: bold;border: none}
+.search_select_w .date_search {padding-right: 10px}
+
+/*검색결과알림*/
+.search_rel_info {margin-top: 25px;font-size: 17px; text-align: center;letter-spacing: -1px}
+
+/*이투데이 검색페이지_검색결과_리스트*/
+.s_search_num {color: #888}
+
+/* 검색결과없을시_리스트기사 */
+.search_article_lst .article_lst_content {overflow: hidden;width: 780px;margin-top: 30px}
+.search_article_lst .article_lst_content li {float: left;width: 240px;padding-right: 20px}
+
+.search_article_lst .see_sub_text {display: block;overflow: hidden;width: 220px;height: 45px;padding: 5px 0 10px 0;font-size: 16px;font-weight: bold;padding-left: 12px}
+
+/*이벤트/행사 페이지 헤더*/
+.Event_header {overflow: hidden;width: 1100px;margin: 0 auto;padding: 44px 0 25px 0;border-bottom: 15px solid #1d46c9}
+.Event_header .Event_logo {width: 330px;text-align: left}
+.Event_header .Event_logo {overflow: hidden;float: left}
+.Event_header .Event_logo h1 {float: left}
+.Event_s_tit {float: left;padding: 12px 0 0 12px;color: #888;font-size: 25px;letter-spacing: -2px}
+.Event_header .Event_gnb {float: right}
+.Event_gnb_w {overflow: hidden}
+.Event_gnb_w li {float: left;padding: 25px 0 0 50px}
+.Event_gnb_w li a {font-size: 17px;font-weight: bold}
+.Event_gnb_w li a:hover {color: #1d46c9}
+
+/*이투데이 이벤트/행사 페이지 컨텐츠*/
+.Event_cont_w .Event_cont_c ul {overflow: hidden;width: 1140px;margin-top: 40px}
+.Event_cont_w .Event_cont_c ul li {float: left;width: 340px;padding:0 40px 40px 0}
+.Event_cont_box {width: 338px;height: 168px;border: 1px solid #ddd}
+.Event_cont_box .Event_cb_tit {padding: 20px}
+.Event_cont_box .Event_cb_tit a {color: #000;font-size: 16px;font-weight: bold}
+.Event_cb_txt {overflow: hidden;width: 300px;margin: 0 0 10px 20px;color: #888;font-size: 14px;text-align: left}
+
+/*속보창 팝업_헤더*/
+.news_flash_header {overflow: hidden;width: 1400px;margin: 0 auto;padding: 30px 0 20px 0;border-bottom: 15px solid #1d46c9}
+.news_flash_header .Event_logo h1 {float: left}
+.news_flash_header .Event_s_tit {position: relative;width: 360px;letter-spacing: -3px;text-align: left;}
+.news_flash_header .news_flash_txt {color: #1d46c9}
+.news_flash_header .news_flash_search {float: right}
+.news_flash_search .search_wrap {width: 280px;padding: 0 0;padding-top: 8px}
+.news_flash_search .search_box {width: 233px;height: 34px;line-height: 34px;color:#888;font-size: 13px;font-weight: normal;border: 1px solid #1d46c9}
+.news_flash_search .btn_search {width: 36px;height: 38px;background-position: 10px -3118px}
+.news_flash_search .e_navi_depth {width: 1400px;margin: 0 auto;height: 40px;line-height: 40px;}
+.flash_date {position: absolute;top: 0;left: 20px}
+.flash_date span {font-size: 14px}
+.flash_stock {position: absolute;top: 0;left: 500px;text-align: center}
+.flash_stock_c {overflow: hidden}
+.flash_stock .e_mc_wrap {float: left;width: 220px;padding-left: 5px}
+.flash_stock .e_mc_wrap dd {width: 60px}
+.flash_left_depth .article_sns_w {position: absolute;top: 4px;right: 20px}
+.newspaper_w {position: absolute;top: 9px;right: 62px}
+.newspaper {display: block;width: 59px;height: 21px;background-position: 0 -3246px}
+.face_right {width: 30px;background-position: 0 -3296px}
+.refresh_w {position: absolute;top: 17px;right: 15px}
+.refresh_ico {display: block;width: 79px;height: 29px;background-position: 0 -3352px}
+.flash_select {position: absolute;top: 17px;left: 192px}
+
+/*속보창 팝업_컨텐츠*/
+.flash_cont_wrap {position: relative;width: 1400px;margin: 25px auto;text-align: left}
+.flash_right_w {position: absolute;top: 0;right: 0;width: 300px;height: auto;padding-left: 20px}
+.flash_left_w {position: absolute;top: 0;left: 0;width: 300px}
+.flash_left_tab ul {overflow: hidden}
+.flash_left_tab ul li {float: left;width: 74px;height: 31px;line-height: 31px;border-bottom: 1px solid #666;background-color: #f6f6f6;text-align: center}
+.flash_left_tab ul li a {color: #000}
+.flash_left_tab ul li.on {background-color: #fff;border-top: 1px solid #666;border-right: 1px solid #666;border-left: 1px solid #666;border-bottom: none;}
+.flash_left_tab ul li.on a {font-weight: bold}
+
+/*속보창 탭리스트*/
+.flash_tab_lst {margin-top: 20px}
+.flash_tab_lst ul li {margin-bottom: 20px;height: 18px}
+.flash_tab_lst ul li a {color: #000;font-size: 14px}
+.flash_tab_txt {float:left;width:230px}
+.flash_tab_press {overflow: hidden;float: right;margin-top: 2px}
+.flash_p_ico {float: left;display: block;width: 14px;height: 13px;background-position: 0 -3402px}
+.flash_press {float: left;display: block;height: 14px;line-height: 12px;padding-left: 4px;color: #999;font-size: 12px}
+
+/*속보창 기사*/
+.flash_article_w {position:absolute;top:0;left:320px}
+.flash_article_c {padding: 0 30px 0 30px}
+.flash_article_c .article_sns_w {position: absolute;bottom: 10px;right: 30px}
+.flash_article_c .article_head .byline {position: absolute;bottom: 10px;left: 30px}
+.flash_article_w .article_sns_w ul li {padding-left: 10px}
+.flash_article_w .article_head .subject {margin-bottom: 0;padding: 0}
+
+/*날씨 전체 탭*/
+.weather_king {width: 760px;padding: 10px 0 15px 0;border-bottom: 1px solid #555}
+.weather_wrap {width: 460px;text-align: center;margin: 0 auto}/*날씨텍스트 바뀔때 width값 조정*/
+.weather_wrap ul {overflow: hidden}
+.weather_wrap ul li {float: left;padding-left: 0}
+.weather_wrap li.on .today_congress .round {color: #1f54ff;border-top: 1px solid #1f54ff;border-bottom: 1px solid #1f54ff}
+.weather_wrap li.on .today_congress .round:before {background-position: 0 -3440px}
+.weather_wrap li.on .today_congress .round:after {background-position: -45px -3440px}
+.weather_wrap li.off .today_congress .round {color: #333;border-top: none;border-bottom: none}
+.weather_wrap li.off .today_congress .round:before {background-position: 0 -3497px}
+.weather_wrap li.off .today_congress .round:after {background-position: -45px -3497px}
+
+/*날씨 컨텐츠_오늘의 날씨*/
+.today_weather_w table {width: 100%}
+.today_weather_w table, .today_weather_w th, .today_weather_w td {border: 1px solid #ddd;text-align: center}
+.today_weather_w table td {font-size: 12px}
+.today_weather_w {margin-top: 15px}
+.today_weather_date {overflow: hidden;margin-top: 15px}
+.today_weather_date .t_w_date {float: left}
+.today_weather_date .tw_date_rit {width: 440px}
+.today_weather_date .tw_date_lef {width: 300px;margin-right: 20px}
+.today_weather_w .s_sec_h_txt {position:relative}
+
+/*날씨 컨텐츠_오늘의 날씨(sec01)*/
+.today_weather_date .tw_date_sec01 {position: relative;width: 298px;height: 218px;border: 1px solid #ddd}
+.today_weather_w .sec01 {overflow: hidden;height: 35px;line-height: 35px;border-bottom: 1px solid #ddd;text-align: center}
+.today_weather_w .lowest {color:#008aff;font-weight: bold}
+.today_weather_w .best {color:#ff0000;font-weight: bold}
+.today_weather_w .sec01 span {font-size: 14px;font-weight: bold}
+.today_weather_w .l_right {padding-right: 10px}
+.today_weather_w .sec02 {height: 131px;border-bottom: 1px solid #ddd}
+.today_weather_w .sec02 .tit {float:left;position: relative}
+.today_weather_w .sec02 .txt {float:right}
+.today_weather_w .sec02 {padding: 20px 45px 0 60px}
+.weather_txt_lage .wt_txt {font-size: 17px;font-weight: bold;color: #000;letter-spacing: -1px}
+.today_weather_w .sec02 .e_wt_temperature {margin-top: 20px;font-size: 34px;color: #1f54ff}
+.today_weather_w .sec02 .wt_temperature {color: #1f54ff}
+.weather_ico_lage {position: absolute;top: 2px;left: 2px}
+.weather_txt_lage {margin: 35px 5px 0 0}
+.today_weather_w .sec02 .txt ul {margin-top: 10px}
+.today_weather_w .sec02 .txt ul li {height: 23px;font-size: 14px} 
+.today_weather_w .sec02 .txt ul li strong {display: block;float: left;width: 55px}
+.today_weather_w .sec02 .txt ul li span {float: left;color: #555}
+.tw_date_sec02 {height: 30px;background-color: #eee;line-height: 30px;font-size: 13px;text-align: center}
+.tw_date_sec03 {margin-top: 25px}
+.tw_date_sec03 .e_wt_ico {display: block;float: none;margin-left: 10px}
+.tw_date_sec03 .sec03 tr td .e_wt_temperature {margin-top: 20px;font-size: 16px}
+.tw_date_sec03 .e_wt_temperature {margin-left: 5px;font-size: 18px;font-family: 'Arial';color: #1f54ff}
+.tw_date_sec03 .wt_temperature {color: #1f54ff}
+.rain_per {padding:3px 0 3px 0;font-weight:bold;letter-spacing:-1px}
+.tw_date_sec03 .wet_condi {padding:5px 0 0 0;font-weight:bold;letter-spacing:-1px}
+.rain_fall {font-size: 15px}
+
+/*날씨 지도 탭_오늘의 날씨*/
+.tw_date_rit {width: 440px;height: 530px}
+.tw_date_map {width: 445px}
+.tw_date_map ul {overflow: hidden}
+.tw_date_map ul li {float: left;width: 146px;height: 40px;line-height: 40px;background-color: #eee;text-align: center;border-bottom: 1px solid #999;border-right: 1px solid #bbb;border-top: 1px solid #999}
+.tw_date_map ul li a {font-size: 15px;font-weight: bold;color: #888}
+.tw_date_map ul li.on a {color: #000}
+.tw_date_map ul li.on {float: left;line-height: 40px;background-color: #fff;text-align: center;border-right: 1px solid #999;}
+.today_weather_w .s_sec_h_txt ul {padding: 0}
+
+/*날씨홈_날씨 지도 컨텐츠_오늘의 날씨*/
+.tw_map_cont {position: relative;width: 441px;height: 530px;background-position: 0 -4102px}
+.tw_map_cont .area {width: 62px;height: 78px;background-color: #fff;text-indent: 0;text-align: center;border: 1px solid #999}
+.area_01 .e_wt_ico {display: block;float: none;width: 60px;}
+.area_name {padding: 3px 0 1px 0;color:#000;font-size: 14px;font-weight: bold;letter-spacing: -1px}
+.area_tem {color: #ff0000;;font-size: 14px;font-weight: bold;letter-spacing: -1px;display: block}
+.tw_map_cont .area_01{position: absolute;top: 40px;left: 185px}
+.tw_map_cont .area_02{position: absolute;top: 100px;left: 270px}
+.tw_map_cont .area_03{position: absolute;top: 125px;left: 100px}
+.tw_map_cont .area_04{position: absolute;top: 145px;left: 190px}
+.tw_map_cont .area_05{position: absolute;top: 236px;left: 135px}
+.tw_map_cont .area_06{position: absolute;top: 240px;left: 235px}
+.tw_map_cont .area_07{position: absolute;top: 260px;left: 325px}
+.tw_map_cont .area_08{position: absolute;top: 340px;left: 135px}
+.tw_map_cont .area_09{position: absolute;top: 345px;left: 235px}
+.tw_map_cont .area_10{position: absolute;top: 441px;left: 195px}
+.area .e_wt_ico .sunny {width: 50px;background-position: 4px -19px}
+.area .e_wt_ico .blur {width: 50px;height: 30px;background-position: -48px -20px;margin-top: 2px}
+.area .e_wt_ico .small_clouds {width: 50px;background-position: -166px -16px}
+.area .e_wt_ico .very_clouds {width: 50px;background-position: -226px -15px}
+.area .e_wt_ico .fog {width: 50px;background-position: 5px -63px}
+.area .e_wt_ico .rain {width: 50px;background-position: -46px -65px}
+.area .e_wt_ico .snow {width: 50px;background-position: -95px -64px}
+.area .e_wt_ico .small_wind {width: 50px;background-position: -145px -66px}
+.area .e_wt_ico .very_wind {width: 50px;background-position: -196px -62px}
+
+/*날씨셀렉트*/
+.today_weather_w .e_select_box {width: 95px;background-position: 80px -4652px}
+.today_weather_w .s_sec_h_txt .on a {display: block;padding-bottom: 8px}
+.today_weather_w .wt_select_1 {position: absolute;top: 0;left: 88px}
+.today_weather_w .wt_select_2 {position: absolute;top: 0;left: 190px}
+.today_weather_w .wt_select_3 {position: absolute;top: 0;left: 66px}
+.today_weather_w .wt_select_4 {position: absolute;top: 0;left: 168px}
+
+/*시간대별날씨_오늘의 날씨*/
+.today_weather_time {margin-top: 25px}
+.wt_time_th {padding:10px 0 10px 0;background-color:#eee;color:#333;font-size:13px;letter-spacing: -1px}
+.wt_time_td {font-weight:bold}
+.today_weather_time .e_right_tit , .today_weather_week .e_right_tit{margin: 0 0 15px 0;}
+
+/*주간날씨_오늘의 날씨*/
+.today_weather_week {margin-top: 25px}
+.t_week_1 .wet_condi {height: 32px;line-height: 32px;font-weight:bold;letter-spacing:-1px}
+.today_weather_week .e_wt_ico {display: block;float: none;margin-left: 35px;margin-top: 10px}
+
+/*날씨뉴스*/
+.weather_news_w {margin-top: 25px}
+.weather_news_w ul {overflow: hidden;width: 780px;margin-top: 15px}
+.weather_news_w ul li {overflow: hidden;float: left;width:370px;height: 107px;padding-right: 20px}
+.weather_news_w ul li .wn_thumb {float: left;padding-right: 20px}
+.weather_news_w .news_lst2 .tit_area {padding-top: 15px}
+.weather_news_c .news_lst2 .tit {max-height: 72px}
+.weather_news_c .news_lst2 li:first-child {padding-top: 0}
+.weather_news_c .news_lst2 li {padding-top: 0}
+.weather_wrap .TC_line_01 {/*ie7*/*padding-left: 48px}
+.weather_wrap .TC_line_02 {/*ie7*/*padding-left: 48px}
+.weather_wrap .TC_line_03 {/*ie7*/*padding-left: 48px}
+.weather_wrap .TC_line_04 {/*ie7*/*padding-left: 48px}
+
+/*섹션_주간뉴스*/
+.t_week_2 .wet_condi {height: 25px;line-height: 24px;font-weight:bold;letter-spacing:-1px}
+.t_week_2 .e_wt_ico {display: block;float: none;margin-left: 32px;margin-top: 0}
+
+/*섹션_레저날씨*/
+.leisure_w {overflow: hidden;margin-top: 25px}
+.leisure_c {overflow: hidden;float: left}
+.leisure_c_01 {width: 460px;margin-right: 20px}
+.leisure_c_02 {width: 280px}
+.leisure_c_02 .tw_date_sec03 {margin-top: 0}
+
+/*섹션_레저날씨_탭*/
+.leisure_tab ul li {float: left;width: 152px;height: 30px;background-color: #eee;text-align: center;line-height: 30px;border-bottom: 1px solid #999}
+.leisure_tab ul li a {font-weight: bold;font-size: 14px}
+.leisure_tab ul li.on {background-color: #fff;border-bottom: none;border-right: 1px solid #999;border-top: 1px solid #999;border-left: 1px solid #999;}
+.leisure_tab ul li.on a {color: #000}
+
+/*섹션_레저날씨_탭컨텐츠*/
+.leisure_area , .leisure_place {width: 460px;border-bottom: 1px solid #e3e3e3;}
+.leisure_area ul , .leisure_place ul {overflow: hidden;padding: 30px 15px 5px 45px}
+.leisure_area ul li {float: left;width: 80px;padding-bottom: 20px}
+.leisure_area ul li a , .leisure_place ul li a{font-size: 14px}
+.leisure_area ul li.on a {color:#000;font-weight: bold}
+.leisure_place ul li.on a {color: #FF0000;font-weight: bold;text-decoration: underline}
+.leisure_place ul li {float: left;padding: 0 19px 25px 0}
+.leisure_place {height: 140px}
+
+/*바다날씨_강수량_날씨*/
+.sea_sec_w .tw_date_sec03 .e_wt_ico {margin-left: 48px}
+.sea_sec_w .weather {margin: 7px 10px 7px 40px;text-align: left}
+.sea_sec_w .weather ul li {height: 20px}
+
+/*바다지도*/
+.sea_map_cont {position: relative;width: 441px;height: 530px;background-position: 0 -4102px}
+.sea_map_cont .name {color: #333}
+.sea_map_cont .area {width: 110px;height: 28px;line-height: 28px;background-color: #fff;text-indent: 0;text-align: center;border: 1px solid #9D77C7}
+.area .sea_name {font-size: 13px;font-weight: bold;color:#7E4FB3}
+.sea_map_cont .area_01 {position: absolute;top: 80px;left: 43px}
+.sea_map_cont .area_02 {position: absolute;top: 114px;left: 20px}
+.sea_map_cont .area_03 {position: absolute;top: 202px;left: 34px}
+.sea_map_cont .area_04 {position: absolute;top: 238px;left: 15px}
+.sea_map_cont .area_05 {position: absolute;top: 385px;left: 43px}
+.sea_map_cont .area_06 {position: absolute;top: 420px;left: 20px}
+.sea_map_cont .area_07 {position: absolute;top: 98px;left: 280px}
+.sea_map_cont .area_08 {position: absolute;top: 133px;left: 310px}
+.sea_map_cont .area_09 {position: absolute;top: 201px;left: 300px}
+.sea_map_cont .area_10 {position: absolute;top: 236px;left: 320px}
+.sea_map_cont .area_11 {position: absolute;top: 365px;left: 280px}
+.sea_map_cont .area_12 {position: absolute;top: 400px;left: 290px}
+.sea_map_cont .area_13 {position: absolute;top: 490px;left: 210px}
+.sea_map_cont .area_14 {position: absolute;top: 490px;left: 50px}
+

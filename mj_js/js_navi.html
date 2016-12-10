@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>navi test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#navi li ul").hide();//드롭메뉴 숨겨줘    
+            $("#navi li").hover(function(){
+            $('ul:first',this).show();//li(메뉴)를 hover하면 보여줘
+          }, function(){
+            $('ul:first',this).hide();//li(메뉴)를 클릭하면 숨겨줘
+          });
+          $("#navi>li:has(ul)>a").each( function() {
+            $(this).html( $(this).html()+' &or;' );
+          });
+            $('#navi li a').click(function(){ //
+                $('#navi li a').removeClass('on');
+                $(this).addClass('on');
+            }); 
+        });
+    </script>
+    <style>
+    body {background-color: #fff}
+    ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden}
+    .navi>li {float: left;background-color: #333}
+    li a {display: block;color: white;text-align: center;padding: 14px 0;width: 200px;text-decoration: none}
+    .navi>li>a:hover {background-color: #3b503c}
+    .on {background-color:#4CAF50}
+    .navi-inner {background-color: #fff}
+    .navi-inner li a {font-size: 14px;color: #000}
+    .navi-inner li {border-bottom: 1px solid #e3e3e3}
+    .navi-inner li:hover {background-color: #333}
+    .navi-inner li a:hover {color: #52cc57}     
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="navi" class="navi">
+          <li>
+            <a href="#home">Home</a>
+            <ul class="navi-inner">
+                <li>
+                    <a href="#">html</a>
+                </li>
+                <li>
+                    <a href="#">css</a>
+                </li>
+                <li>
+                    <a href="#">javascript</a>
+                </li>
+            </ul>
+          </li>
+          <li>
+              <a href="#news">News</a>
+                <ul class="navi-inner">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+          <li>
+              <a href="#contact">Contact</a>
+              <ul class="navi-inner">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+          <li>
+              <a href="#about">About</a>
+              <ul class="navi-inner">
+                    <li>
+                        <a href="#">html</a>
+                    </li>
+                    <li>
+                        <a href="#">css</a>
+                    </li>
+                    <li>
+                        <a href="#">javascript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

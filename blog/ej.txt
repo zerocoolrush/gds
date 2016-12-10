@@ -1,3 +1,7 @@
 international test ej.txt
 adskfjsldkfjlsdkfjsldfj
+<<<<<<< HEAD
 hghghggsdgdsgdsgddxxxxxxxx
+=======
+ssdfsddhh HHㅇ
+>>>>>>> e0e17bd00635ee014e429718657f8741eb8d53cb
